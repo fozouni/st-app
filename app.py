@@ -6,9 +6,13 @@ import pickle
 import warnings
 warnings.filterwarnings("ignore")
 
+###########################################################
+from sklearn.preprocessing import StandardScaler
+from sklearn.base import BaseEstimator, TransformerMixin
+################################################################
 
 from absenteeism_module import *
-################################################################
+
 
 def Input_Output():
     data = st.file_uploader("upload file", type={"csv", "txt"})
