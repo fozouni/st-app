@@ -6,16 +6,12 @@ import pickle
 import warnings
 warnings.filterwarnings("ignore")
 
-###########################################################
-from sklearn.preprocessing import StandardScaler
-from sklearn.base import BaseEstimator, TransformerMixin
-################################################################
 
 from absenteeism_module import *
 
 
 def Input_Output():
-    data = st.file_uploader("upload file", type={"csv", "txt"})
+    data = st.file_uploader("آپلود فایل", type={"csv", "txt"})
     if data is not None:
         df = pd.read_csv(data)
         #st.write(df)
