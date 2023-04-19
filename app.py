@@ -14,7 +14,7 @@ def Input_Output():
     data = st.file_uploader("فایل خود را آپلود کنید", type={"csv", "txt"})
     if data is not None:
         df = pd.read_csv(data)
-        #st.write(df)
+        st.write(df)
         model = absenteeism_model('model', 'scaler')
 
         model.load_and_clean_data('Absenteeism_new_data.csv')
