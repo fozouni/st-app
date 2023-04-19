@@ -11,7 +11,7 @@ from absenteeism_module import *
 
 
 def Input_Output():
-    data = st.file_uploader("Upload Your File Here", type={"csv", "txt"})
+    data = st.file_uploader("فایل خود را آپلود کنید", type={"csv", "txt"})
     if data is not None:
         df = pd.read_csv(data)
         #st.write(df)
