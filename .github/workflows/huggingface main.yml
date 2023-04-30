@@ -16,4 +16,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN2 }}
-        run: git push https://fozouni123:$HF_TOKEN@huggingface.co/spaces/fozouni123/absenteeism main
+        run: git push --force https://fozouni123:$HF_TOKEN@huggingface.co/spaces/fozouni123/absenteeism main
